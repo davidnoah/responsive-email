@@ -1,0 +1,130 @@
+/* mobile */
+@media (max-width: 600px) {
+  .wrapper {
+    width: 250px;
+    height: 990px;
+    background-color: #F0F0F0;
+    box-shadow: 1px 1px 5px 2px #b8bdbd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content-container {
+    width: 250px;
+    height: 795px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 109px;
+  }
+
+  .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 0px;
+  }
+
+  .main-image {
+    height: 140px;
+    width: 250px;
+  }
+
+  .pitch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .pitch-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding-left: 21px;
+    padding-right: 21px;
+    line-height: 22px;
+  }
+
+  .get-template-button {
+    background-color: #E9703E;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: #E7622B;
+    width: 135px;
+    height: 35px;
+    color: white;
+    font-size: 13px;
+    text-decoration: underline;
+  }
+
+  hr {
+    width: 85%;
+    color: #F0F0F0;
+    border-color: #F0F0F0;
+    border-style: solid;
+    margin: 0;
+  }
+
+  .social-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .social-icon:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
+  .footer-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+  }
+
+  .footer-text {
+    font-size: 10px;
+    color: #999999;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .subscription-link {
+    color: #999999;
+  }
+
+  .subscription-link:hover {
+    color: #6f6e6e;
+  }
+
+}
