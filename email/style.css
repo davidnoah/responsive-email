@@ -1,7 +1,15 @@
-/*@media (max-width: 600px) {
+/* desktop */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
   .wrapper {
-    width: 250px;
-    height: 990px;
+    width: 100%;
+    min-width: 250px;
+    height: auto;
     background-color: #F0F0F0;
     box-shadow: 1px 1px 5px 2px #b8bdbd;
     display: flex;
@@ -10,10 +18,17 @@
     flex-direction: column;
   }
 
+  .top-logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   .content-container {
-    width: 250px;
-    height: 795px;
+    width: 80%;
+    min-width: 250px;
+    height: auto;
     background-color: white;
+    border-radius: 3px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -25,44 +40,52 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 109px;
+    height: auto;
+    width: 100%;
+    padding-bottom: 10px;
   }
 
   .title {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 19px;
-    padding-left: 10px;
-    padding-right: 10px;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
     font-weight: bolder;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .subtitle {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
     font-weight: normal;
     margin-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .main-image {
-    height: 140px;
-    width: 250px;
+    height: auto;
+    width: 100%;
+    min-width: 205px;
+    padding-bottom: 10px;
   }
 
   .pitch-container {
+    height: auto;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 10px;
   }
 
   .pitch-text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
     text-align: center;
-    padding-left: 21px;
-    padding-right: 21px;
-    line-height: 22px;
+    margin-top: 0px;
+    line-height: 20px;
   }
 
   .get-template-button {
@@ -77,12 +100,19 @@
     text-decoration: underline;
   }
 
+  .get-template-button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
   hr {
-    width: 212px;
+    width: 80%;
     color: #F0F0F0;
     border-color: #F0F0F0;
     border-style: solid;
     margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   .detail-container {
@@ -90,23 +120,27 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    width: 212px;
-    height: 244px;
+    width: 90%;
+    height: auto;
   }
 
-  .detail {
+  .detail  {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    width: 212px;
+    height: auto;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   .detail-icon-container {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    height: 95px;
+    height: 100%;
+    align-self: stretch;
   }
 
   .detail-icon {
@@ -118,8 +152,8 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    height: 95px;
-    width: 172px;
+    height: auto;
+    width: 100%;
   }
 
   .detail-title {
@@ -145,12 +179,16 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
   }
 
   .contact-text {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     margin: 0;
+    margin-bottom: 5px;
   }
 
   .contact-email {
@@ -163,6 +201,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    padding-top: 10px;
   }
 
   .social-icon {
@@ -182,7 +221,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 90%;
+    height: auto;
   }
 
   .footer-text {
@@ -198,5 +238,3 @@
   .subscription-link:hover {
     color: #6f6e6e;
   }
-
-}*/

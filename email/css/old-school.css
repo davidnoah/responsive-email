@@ -1,4 +1,8 @@
 /* desktop */
+body {
+  display: block;
+  text-align: center;
+}
 
   .wrapper {
     width: 100%;
@@ -6,15 +10,11 @@
     height: auto;
     background-color: #F0F0F0;
     box-shadow: 1px 1px 5px 2px #b8bdbd;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+    display: block;
   }
 
   .top-logo {
     padding-top: 10px;
-    padding-bottom: 10px;
   }
 
   .content-container {
@@ -23,29 +23,23 @@
     height: auto;
     background-color: white;
     border-radius: 3px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
+    display: block;
   }
 
   .title-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: block;
     height: auto;
     width: 100%;
-    padding-bottom: 10px;
   }
 
   .title {
     font-family: Helvetica, sans-serif;
     font-size: 18px;
     font-weight: bolder;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding-right: 40px;
     padding-left: 40px;
+    padding-top: 10px;
   }
 
   .subtitle {
@@ -67,11 +61,7 @@
   .pitch-container {
     height: auto;
     width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 10px;
+    display: block
   }
 
   .pitch-text {
@@ -110,19 +100,13 @@
   }
 
   .detail-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+    display: block;
     width: 90%;
     height: auto;
   }
 
   .detail  {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
+    display: table;
     height: auto;
     width: 90%;
     margin-bottom: 10px;
@@ -130,22 +114,25 @@
   }
 
   .detail-icon-container {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    height: 100%;
-    align-self: stretch;
+    display: table-cell;
+    height: auto;
+    text-align: center;
+    vertical-align: top;
   }
 
   .detail-icon {
     width: 40px;
     height: 40px;
+    vertical-align: top;
+  }
+
+  td {
+    vertical-align: top;
   }
 
   .detail-text-container {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+    display: table-cell;
+    float: right;
     height: auto;
     width: 100%;
   }
@@ -155,7 +142,7 @@
     margin: 0;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 15px;
+    padding-left: 5px;
   }
 
   .detail-text {
@@ -163,15 +150,12 @@
     margin: 0;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 15px;
+    padding-left: 5px;
     line-height: 19px;
   }
 
   .contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: block;
     margin-bottom: 10px;
     width: 100%;
     height: auto;
@@ -191,14 +175,11 @@
   }
 
   .social-icons-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
     padding-top: 10px;
   }
 
   .social-icon {
+    display: inline-block;
     width: 35px;
     height: 35px;
     margin-left: 10px;
@@ -211,18 +192,17 @@
   }
 
   .footer-text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
+    display: block;
+    width: 70%;
     height: auto;
+    padding-bottom: 10px;
   }
 
   .footer-text {
     font-size: 10px;
     color: #999999;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
   }
 
   .subscription-link {
