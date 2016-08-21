@@ -79,6 +79,10 @@
     text-decoration: underline;
   }
 
+  .get-template-button:hover {
+    cursor: pointer;
+  }
+
   hr {
     width: 373px;
     color: #F0F0F0;
