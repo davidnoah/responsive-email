@@ -120,6 +120,7 @@
     justify-content: flex-start;
     flex-direction: column;
     height: 95px;
+    width: 172px;
   }
 
   .detail-title {

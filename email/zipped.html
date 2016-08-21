@@ -1,0 +1,496 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Email Template</title>
+    <meta name="description" content="Get this responsive email template - a mobile friendly design is a must for email campaigns.">
+    <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    /* desktop */
+    @media (min-width: 600px) {
+      .wrapper {
+        width: 560px;
+        height: 900px;
+        background-color: #F0F0F0;
+        box-shadow: 1px 1px 5px 2px #b8bdbd;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .content-container {
+        width: 430px;
+        height: 730px;
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 85px;
+      }
+
+      .title {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        font-weight: bolder;
+        margin-bottom: 15px;
+      }
+
+      .subtitle {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: normal;
+        margin-top: 0px;
+      }
+
+      .main-image {
+        height: 242px;
+        width: 430px;
+      }
+
+      .pitch-container {
+        height: 120px;
+        width: 430px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .pitch-text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        text-align: center;
+        margin-top: 0px;
+        padding-left: 28px;
+        padding-right: 28px;
+        line-height: 22px;
+      }
+
+      .get-template-button {
+        background-color: #E9703E;
+        border-radius: 2px;
+        border-style: solid;
+        border-color: #E7622B;
+        width: 135px;
+        height: 35px;
+        color: white;
+        font-size: 13px;
+        text-decoration: underline;
+      }
+
+      .get-template-button:hover {
+        cursor: pointer;
+      }
+
+      hr {
+        width: 373px;
+        color: #F0F0F0;
+        border-color: #F0F0F0;
+        border-style: solid;
+        margin: 0;
+      }
+
+      .detail-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 373px;
+      }
+
+      .detail  {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        height: 53px;
+        margin-bottom: 10px;
+      }
+
+      .detail-icon-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 53px;
+      }
+
+      .detail-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .detail-text-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 53px;
+        width: 333px;
+      }
+
+      .detail-title {
+        font-size: 13px;
+        margin: 0;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 15px;
+      }
+
+      .detail-text {
+        font-size: 13px;
+        margin: 0;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 15px;
+        line-height: 19px;
+      }
+
+      .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+
+      .contact-text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        margin: 0;
+      }
+
+      .contact-email {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+      }
+
+      .social-icons-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+      }
+
+      .social-icon {
+        width: 35px;
+        height: 35px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .social-icon:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+
+      .footer-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 360px;
+      }
+
+      .footer-text {
+        font-size: 10px;
+        color: #999999;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .subscription-link {
+        color: #999999;
+      }
+
+      .subscription-link:hover {
+        color: #6f6e6e;
+      }
+    }
+
+    /* mobile */
+    @media (max-width: 600px) {
+      .wrapper {
+        width: 250px;
+        height: 990px;
+        background-color: #F0F0F0;
+        box-shadow: 1px 1px 5px 2px #b8bdbd;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .content-container {
+        width: 250px;
+        height: 795px;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 109px;
+      }
+
+      .title {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: bolder;
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: normal;
+        margin-top: 0px;
+      }
+
+      .main-image {
+        height: 140px;
+        width: 250px;
+      }
+
+      .pitch-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .pitch-text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        text-align: center;
+        padding-left: 21px;
+        padding-right: 21px;
+        line-height: 22px;
+      }
+
+      .get-template-button {
+        background-color: #E9703E;
+        border-radius: 2px;
+        border-style: solid;
+        border-color: #E7622B;
+        width: 135px;
+        height: 35px;
+        color: white;
+        font-size: 13px;
+        text-decoration: underline;
+      }
+
+      hr {
+        width: 212px;
+        color: #F0F0F0;
+        border-color: #F0F0F0;
+        border-style: solid;
+        margin: 0;
+      }
+
+      .detail-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 212px;
+        height: 244px;
+      }
+
+      .detail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 212px;
+      }
+
+      .detail-icon-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 95px;
+      }
+
+      .detail-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .detail-text-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 95px;
+        width: 172px;
+      }
+
+      .detail-title {
+        font-size: 13px;
+        margin: 0;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 15px;
+      }
+
+      .detail-text {
+        font-size: 13px;
+        margin: 0;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 15px;
+        line-height: 19px;
+      }
+
+      .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+
+      .contact-text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        margin: 0;
+      }
+
+      .contact-email {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+      }
+
+      .social-icons-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+      }
+
+      .social-icon {
+        width: 35px;
+        height: 35px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .social-icon:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+
+      .footer-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+      }
+
+      .footer-text {
+        font-size: 10px;
+        color: #999999;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .subscription-link {
+        color: #999999;
+      }
+
+      .subscription-link:hover {
+        color: #6f6e6e;
+      }
+
+    }
+
+    </style>
+  </head>
+  <body>
+    <center class="wrapper">
+
+      <img width=75 height=25 src="https://s3-us-west-1.amazonaws.com/eaze-email/logo-black.png" alt="logo-black" />
+
+      <div class="content-container">
+        <div class="title-container">
+          <h1 class="title">Get this responsive email template</h1>
+          <h2 class="subtitle">Available on GitHub and CodePen</h2>
+        </div>
+        <img class="main-image" src="https://s3-us-west-1.amazonaws.com/eaze-email/hero-wide.png" alt="hero-wide" />
+        <div class="pitch-container">
+          <p class="pitch-text">
+            More than 50% of total email opens occurred on a mobile <br> device — a mobile friendly design is a must for email campaigns.
+          </p>
+          <button class="get-template-button" href="#" type="button" name="get-the-template">Get the template</button>
+        </div>
+        <hr></hr>
+        <div class="detail-container">
+
+          <div class="detail">
+            <div class='detail-icon-container'>
+              <img class='detail-icon' src="https://s3-us-west-1.amazonaws.com/eaze-email/list-item.png" alt="list-item" />
+            </div>
+            <div class="detail-text-container">
+              <h3 class="detail-title">Highly compatible</h3>
+              <p class="detail-text">Tested on the most popular email  clients for web, desktop and mobile. Checklist included.</p>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class='detail-icon-container'>
+              <img class='detail-icon' src="https://s3-us-west-1.amazonaws.com/eaze-email/list-item.png" alt="list-item" />
+            </div>
+            <div class="detail-text-container">
+              <h3 class="detail-title">Designer friendly</h3>
+              <p class="detail-text">Sketch app resource file and a bunch of social media icons are also included in GitHub repository.</p>
+            </div>
+          </div>
+        </div>
+
+        <hr></hr>
+
+        <div class="contact-container">
+          <p class="contact-text">Have a question?</p>
+          <a class="contact-email" href="mailto:support@ourteam.com">support@ourteam.com</a>
+        </div>
+
+      </div>
+
+      <div class="social-icons-conatiner">
+        <img class="social-icon" src="https://s3-us-west-1.amazonaws.com/eaze-email/facebook.png" href="#" alt="facebook-icon" />
+        <img class="social-icon" src="https://s3-us-west-1.amazonaws.com/eaze-email/twitter.png" href="#" alt="twitter-icon" />
+        <img class="social-icon" src="https://s3-us-west-1.amazonaws.com/eaze-email/googleplus.png" href="#" alt="googleplus-icon" />
+        <img class="social-icon" src="https://s3-us-west-1.amazonaws.com/eaze-email/instagram.png" href="#" alt="instagram-icon" />
+      </div>
+
+      <div class="footer-text-container">
+        <p class="footer-text">
+          This email template was sent to you because we want to make the world a better place. You could change your
+          <a class="subscription-link" href="#">subscription settings</a> anytime.
+        </p>
+      </div>
+
+    </center>
+  </body>
+</html>
