@@ -139,6 +139,25 @@
     line-height: 19px;
   }
 
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .contact-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 0;
+  }
+
+  .contact-email {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+  }
+
   .social-icons-container {
     display: flex;
     justify-content: center;
