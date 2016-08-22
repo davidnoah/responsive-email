@@ -16,7 +16,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
   <?php if( current_user_can( 'manage_options' ) ) { ?>
-    <form class='summary-form' action="../summary/" method="post">
+    <form class='summary-form' action="../form/" method="post">
+			<input type="hidden" name="team_action" value="summary_change">
       Create or Change the Team Summary <textarea class="input" id="summary-change" type="textarea" name="team_summary"></textarea>
 
       <input class='summary-button' type="submit">
@@ -34,6 +35,8 @@ get_header(); ?>
         Photo URL <input class="input" type="text" name="member_photo" >
         Description <input id="lower-input" class="input" type="text" name="member_description" >
 
+				<input type="hidden" value="team_insert" action="team_action">
+
         <input type='submit' value="Create">
       </form>
 
@@ -50,8 +53,9 @@ get_header(); ?>
               </div>
               <div class="right">
                 <p class="member"><?php echo $member->description; ?></p>
-                <form class="delete" method="post" action='../delete/'>
+                <form class="delete" method="post" action='../form/'>
                   <input type="hidden" value=<?php echo $member->id;?> name="team_id" />
+									<input type="hidden" value='team_delete' name="team_action">
 
                   <input class="delete-button" type="submit" value="Delete">
                 </form>
