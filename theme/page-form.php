@@ -10,7 +10,7 @@
 	        'photo' => $_POST["member_photo"],
 	        'description' => $_POST["member_description"]
 	      ));
-		 } elseif ($_POST['team_action'] == 'summary_change') {
+		 } elseif ($_POST['team_action'] == 'summary_change' ) {
 			 $results = $wpdb->get_results( 'SELECT * FROM wp_teamsummary' );
        if (count($results) == 0) {
          $wpdb->insert('wp_teamsummary', array(
@@ -22,6 +22,7 @@
            'summary' => $_POST["team_summary"]),
            array('name' => 'eaze'));
        }
+
 		} else {
 			 $wpdb->delete('wp_teammembers', array('id' => $_POST['team_id']));
 		 }

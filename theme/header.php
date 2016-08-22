@@ -18,7 +18,6 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
 
-
 <?php wp_head(); ?>
 </head>
 

@@ -112,6 +112,7 @@ function theme_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 
 /**
  * Implement the Custom Header feature.
